@@ -1,0 +1,104 @@
+body { 
+    margin: 0;
+     height: 100vh;
+      background: linear-
+      gradient(#ffe6eb, #fff0f5);
+      overflow: hidden; font-family: 'Arial', sans-serif; 
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+     } 
+
+     .box { 
+        text-align: center; 
+        background: rgba(255,255,255,0.92); 
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(255,0,100,0.2);
+        z-index: 2;
+         max-width: 90%;
+         }
+
+     h1 { color: #e6005c;
+     }
+
+      .highlight { 
+        color: #ff3366; 
+    } 
+
+    #countdown { 
+        font-size: 18px; 
+        color: #ff3366; 
+        margin-bottom: 20px;
+        font-weight: bold; }
+        
+    button { 
+        padding: 14px 28px;
+        font-size: 18px;
+        margin: 15px;
+        border: none; 
+        border-radius: 12px; 
+        cursor: pointer; 
+        font-weight: bold;
+    } 
+
+    #yes {
+         background: #ff4d79;
+         color: white; 
+    } 
+
+    #no { 
+        background: #aaa;
+        color: white;
+        position: fixed; /* CHANGE from 
+        'relative' to 'fixed' */
+        transition: all 0.3s ease; /* Makes
+        movement smoother */
+    cursor: pointer; /*Shows it's 
+    clickable */
+    } 
+
+    #no:hover {
+        background: #888;
+        transform: scale(1.05); /* Slight
+        grow effect */
+    }
+
+    #gif {
+        display: none; 
+        margin-top: 25px; 
+        padding-top: 20px; 
+        border-top: 2px dashed #ff99bb;
+    } 
+
+    img { 
+        width: 100%;
+        max-width: 300px;
+        border-radius: 15px; 
+    } 
+
+    .heart { 
+        position: fixed; 
+        bottom: -10px; 
+        font-size: 20px;
+        animation: float 6s linear infinite; 
+        opacity: 0.7; 
+    } 
+    
+    @keyframes float { 
+        0% { transform: translateY(0) 
+    scale(1); opacity: 1; } 
+        100% { transform: translateY(-110vh) scale(1.5); opacity: 0; } 
+    }
+    
+    .kiss { 
+        position: fixed; 
+        font-size: 40px; 
+        animation: kissFloat 2s ease-out forwards; 
+    } 
+    
+    @keyframes kissFloat { 
+        0% { transform: scale(0.5)
+             translateY(0); opacity: 1; } 
+             100% { transform: scale(1.5)
+                 translateY(-150px); opacity: 0; } }
